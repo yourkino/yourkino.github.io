@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" href="urish.css">
+    <script src="https://kit.fontawesome.com/e8fa2e31b4.js" crossorigin="anonymous"></script>
+    <link class="v78" rel = "icon" href = 
+    "3.png">
+      <title>hayfilm</title>
+</head>
+<link rel="icon" href="icon_path" type="image/icon type">
+ </head>
+<body>   
+<div class="main">
+    <header>
+    
+            <div class="brand-logo">
+               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUfGE_azgXCQcDjW4QwoXztddELqcqcCn7sM4hUY_RFwKjnB9yyTXrZ7ikS7fEFwq3Z1w&usqp=CAU">    
+            </div>
+            <nav class="navbar">
+                <ul class="top-menu">
+                    
+                    
+                        
+                       
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+             
+                    <li class="menu-item">
+                        <a href="index.html" class="menu-link">ՏՈՒՆ</a>
+                    </li>   
+           
+                          
+                    &nbsp;&nbsp;&nbsp; &nbsp;
+
+  
+
+                      
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+
+     <li class="menu-item">
+                        <a href="ditvum en.html" class="menu-link">Դիտվում են</a>
+                    </li> 
+
+                      
+                    
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+  
+       <li class="menu-item">
+                        <a href="mult.html" class="menu-link">մուլտֆիլմեր</a>
+                    </li>
+
+                     
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                     
+                         <li class="menu-item">
+                        <a href="hayeren filmer.html" class="menu-link">Հայերեն թարգմանված </a>
+                    </li>
+                    
+
+
+        
+                    <div class="searchBar">
+                        <input placeholder="Search..." id="searchBar" name="searchBar" type="text">
+                        <i class="fa-solid fa-magnifying-glass glass" id="btn"></i>
+                    </div>
+                    
+    
+      <script src="script.js"></script> 
+                </ul>
+            </nav>
+            
+        
+        </header>
+  
+<body>
+
+
+    
+  
+            
+
+        </div>
+        
+            
+   
+<div class="header">
+                <p>Ֆիլմեր</p>
+                
+            </div>
+            <div class="body">
+                <div id="root"></div>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+
+    <script>
+        
+        const product = [
+
+        {
+                id: 0,
+                image:'https://films.bz/img-medium/uploads/posts/2021-01/1609787516_harrymahvan158f41gh58d3gh5s3d0s35h.jpg',
+                title: ' harry potter',
+    
+                watch:'https://api.tobaco.ws/embed/movie/389'
+            },
+            {
+                id: 1,
+                image: 'https://films.bz/img-medium/uploads/posts/2019-12/1577437922_af5af0a68f40a6840jh8k40gk403g8k.jpg',
+                title: 'titanik',
+                watch:'https://api.tobaco.ws/embed/movie/486'
+            },
+            {
+                id: 2,
+                image: 'https://films.bz/img-medium/uploads/posts/2019-12/1576704373_ad98d0a68d40a6d40a68d0ad.jpg',
+                title: 'home alone',
+       watch:'https://5808010880810whinehouse.com/films-1/tanyenak-1-720/'
+            },
+            {
+                id: 3,
+                image: 'https://films.bz/img-medium/uploads/posts/2019-08/1566130701_iphone360_496849.jpg',
+                title: 'malifisenta',
+                watch:'https://api.tobaco.ws/embed/movie/250'
+            },
+            {
+                id: 4,
+                image: 'https://films.bz/img-medium/uploads/posts/2022-02/1645720961_262418167_4535213393265639_8758314333265073163_n.jpg',
+                title: 'spder-man',
+                watch:'https://api.tobaco.ws/embed/movie/51984'
+            },
+            {
+                id: 5,
+                image: 'https://films.bz/img-medium/uploads/posts/2021-05/1622178436_casummar41sazg4512sa1g1254asg5142a.jpg',
+                title: 'ցասում մարդկային / casum mardkayin' ,
+               watch:'https://api.tobaco.ws/embed/movie/45349'
+            },
+
+            {
+                id: 6,
+                image: 'https://films.bz/img-medium/uploads/posts/2023-03/1680264449_creed3.webp',
+                title: 'krid 3' ,
+               watch:'https://api.strvid.ws/embed/movie/60676'
+            },
+
+            {
+                id: 7,
+                image: 'https://films.bz/img-medium/uploads/posts/2023-04/1681661432_mafiayivosorsgs541asg586asg365swdhg.webp',
+                title: 'mafiyai vorsordy' ,
+               watch:'https://api.strvid.ws/embed/movie/8037'
+            },
+
+            {
+                id: 8,
+                image: 'https://films.bz/img-medium/uploads/posts/2023-04/1681113947_lavmayrasag7fa7g7sa4g4a.webp',
+                title: 'lav mayrery/լավ մայրերը' ,
+               watch:'https://api.strvid.ws/embed/movie/64445'
+            },
+            {
+                id: 9,
+                image: 'https://films.bz/img-medium/uploads/posts/2023-04/1681563964_verjinbanyvornaassgdf7hd4f583ds463hshg.webp',
+                title: 'verjon bany vor na asac indz/վերջին բանը որ նա ինձ ասաց' ,
+               watch:'https://api.strvid.ws/embed/movie/63912'
+            },
+            {
+                id: 10,
+                image: 'https://films.bz/img-medium/uploads/posts/2023-04/1681590085_verjintagavsagf452dgs4fv53aszfg351asff.webp',
+                title: 'verjin tagavorutyuny' ,
+               watch:'https://api.strvid.ws/embed/movie/63910'
+            },
+
+            {
+                id: 11,
+                image: 'https://films.bz/img-medium/uploads/posts/2019-09/geroj_iphone360_889.jpg',
+                title: 'heros/հերոս' ,
+               watch:'https://api.tobaco.ws/embed/movie/8056'
+            },
+
+            {
+                id: 12,
+                image: 'https://films.bz/img-medium/uploads/posts/2022-05/1653218573_u478d4f8e7a71ub76r61a.webp',
+                title: 'trchox dashuynneri tuny/թռչող դաշույների տունը' ,
+               watch:'https://api.tobaco.ws/embed/movie/8149'
+            },
+
+            {
+                id: 13,
+                image: 'https://films.bz/img-medium/uploads/posts/2020-07/1595153306_6hj2kgfjh5fd1hgdfs53g53sdg153s153g.jpg',
+                title: 'հավասարակշռություն/havasarakshrutyun' ,
+               watch:'https://api.tobaco.ws/embed/movie/3028'
+            },
+
+            {
+                id: 14,
+                image: 'https://films.bz/img-medium/uploads/posts/2020-01/1577981401_h7dr065gh0sd68ff4068sf068sf.jpg',
+                title: 'iqs mardik/իքս մարդիկ' ,
+               watch:'https://5808010880810whinehouse.com/films-3/hls/iks-ardik-1/'
+            },
+            {
+                id: 15,
+                image: 'https://films.bz/img-medium/uploads/posts/2022-10/1667199886_arevmtyanchaksg4ds7gh41sdg15sd15gwsa58gs.webp',
+                title: 'arevmtyan chakatum aranc popoxutyunneri' ,
+               watch:'https://api.loadbox.ws/embed/movie/59584'
+            },
+
+            {
+                id: 16,
+                image: 'https://films.bz/img-medium/uploads/posts/2022-08/1659959187_13kyanqers5gh1sd3dfh0g.webp',
+                title: '13 kyanqer' ,
+               watch:'https://api.tobaco.ws/embed/movie/58735'
+            },
+
+            {
+                id: 17,
+                image: 'https://films.bz/img-medium/uploads/posts/2021-05/1622439576_187631674_2118658101610017_5867488653962200196_n.png',
+                title: 'qruela/քրուելա' ,
+               watch:'https://api.tobaco.ws/embed/movie/44471'
+            },
+
+
+            {
+                id: 18,
+                image: 'https://films.bz/img-medium/uploads/posts/2019-08/1567200919_iphone360_6877.jpg',
+                title: 'terminal/տերմինալ' ,
+               watch:'https://api.tobaco.ws/embed/movie/756'
+            },
+
+            {
+                id: 19,
+                image: 'https://films.bz/img-medium/uploads/posts/2021-04/1618756460_lrtesnerixad51af51ag158sjh3s531g513ag.jpg',
+                title: 'lrtesneri xaxer/լրտեսների խաղեր' ,
+               watch:'https://5808010880810whinehouse.com/films-3/hls/lrtesakan-xaxer/'
+            },
+
+            {
+                id: 20,
+                image: 'https://films.bz/img-medium/uploads/posts/2022-01/1641044023_34xss3gwkdwvtomcdkec2lw4pvb.jpg',
+                title: 'հարրի փոթթեր 20 տաի անց/harry potter 20 years later' ,
+               watch:'https://api.tobaco.ws/embed/movie/53299'
+            },
+            {
+                id: 21,
+                image: 'https://films.bz/img-medium/uploads/posts/2023-03/1679218278_koractarfsgh53sdg15sd15g5s1a.webp',
+                title: 'korac tagavory/կորած թագավորը' ,
+               watch:'https://api.strvid.ws/embed/movie/60943'
+            },
+
+            {
+                id: 22,
+                image: 'https://films.bz/img-medium/uploads/posts/2020-12/1608884343_evsmerkdhg1dj85sdh5s1gsag2sg0sdg.jpg',
+                title: 'evs mek raund/ևս մեկ ռաունդ ' ,
+               watch:'https://api.tobaco.ws/embed/movie/36021'
+            },
+
+            {
+                id: 23,
+                image: 'https://films.bz/img-medium/uploads/posts/2022-11/1669279036_surtsnaf62s5hg95sa945sd94njh49gs.webp',
+                title: 'սուրբ ծննունդը քեզ հետ/surb cnnundy qez het ' ,
+               watch:'https://api.loadbox.ws/embed/movie/61147'
+            },
+
+            {
+                id: 24,
+                image: 'https://films.bz/img-medium/uploads/posts/2023-03/1677656268_193f4e75993e06d36f6ea48797a0dfc3.webp',
+                title: 'otto anunov mardy/օտտօ անունով մարդը ' ,
+               watch:'https://api.strvid.ws/embed/movie/62014'
+            },
+            {
+                id: 25,
+                image: 'https://films.bz/img-medium/uploads/posts/2019-09/1569691388_888304.jpg',
+                title: 'նվեր/nver ' ,
+               watch:'https://api.tobaco.ws/embed/movie/7971'
+            },
+            {
+                id: 26,
+                image: 'https://films.bz/img-medium/uploads/posts/2019-10/legendy-oseni_iphone360_8827.jpg',
+                title: 'ashnan legendner/աշնան լեգենդներ ' ,
+               watch:'https://5808010880810whinehouse.com/films-3/hls/720-ashnan-legendner/'
+            },
+            {
+                id: 27,
+                image: 'https://films.bz/img-medium/uploads/posts/2020-02/1582118351_w68t0w684t680dujglkgol4680h4680gk468fg.jpg',
+                title: ' jumanji/ջումանջի' ,
+               watch:'https://api.tobaco.ws/embed/movie/9867'
+            },
+
+            {
+                id: 28,
+                image: 'https://films.bz/img-medium/uploads/posts/2023-01/1674814510_cheburportarm.webp',
+                title: ' չեբուրաշկա/cheburashka' ,
+               watch:'https://api.getcodes.ws/embed/movie/57434'
+            },
+            {
+                id: 0,
+                image:'https://films.bz/img-medium/uploads/posts/2023-07/1688288909_kaxardesa53fsa53ga543gasg.webp',
+                title: ' kaxardy/The Witcher/կախարդը',
+    
+                watch:'https://api.strvid.ws/embed/movie/8683'
+            },
+            {
+                id: 1,
+                image: 'https://films.bz/img-medium/uploads/posts/2020-07/1595767182_gotd62hd5h13d531h53dfsfdaf.jpg',
+                title: 'Game of Thrones/gaheri xaxy/գահերի խաղը',
+                watch:'https://5808010880810whinehouse.com/serial/got/'
+            },
+            {
+                id: 2,
+                image: 'https://films.bz/img-medium/uploads/posts/2021-01/1609779642_harrypilisdsh816186jds18g6as50dhf85srf.jpg',
+                title: 'Harry Potter and the Sorcererՙs Stone/Հարրի Փոթերը և Փիլիսոփայական քարը',
+       watch:'https://5808010880810whinehouse.com/films-2/harryiliso-720/'
+            },
+            {
+                id: 3,
+                image: 'https://films.bz/img-medium/uploads/posts/2023-06/1687420975_gaxtnineda54f45a4gfa.webp',
+                title: 'gaxtni nerxujum/Secret Invasion/Գաղտնի ներխուժում',
+                watch:'https://api.strvid.ws/embed/movie/59707'
+            },
+            {
+                id: 4,
+                image: 'https://films.bz/img-medium/uploads/posts/2022-10/1665040451_lavbjisaf4sgfas5sgh3saf.webp',
+                title: 'Լավ բժիշկը/the good doctor/lav bjishky',
+                watch:'https://api.strvid.ws/embed/movie/2243'
+            },
+            {
+                id: 5,
+                image: 'https://films.bz/img-medium/uploads/posts/2021-08/txtetunagf1a4f51a51g512a51ga512g51afg5.jpg',
+                title: 'թղթե տունը/txte tuny / la casa de papel' ,
+               watch:'https://5808010880810whinehouse.com/serial/txte-tun/'
+            },
+
+            {
+                id: 6,
+                image: 'https://films.bz/img-medium/uploads/posts/2023-07/1688539551_incheereveumsfasf45a4f23af.webp',
+                title: 'Ինչ է երևում այստեղից/Was man von hier aus sehen kann' ,
+               watch:'https://api.strvid.ws/embed/movie/66204'
+            },
+
+            {
+                id: 7,
+                image: 'https://films.bz/img-medium/uploads/posts/2022-11/1669276769_uensdeys45gs8a4068d04j8h4sa5df4a.webp',
+                title: 'ՈՒենսդեյ/wendnesday' ,
+               watch:'https://5808010880810whinehouse.com/serial/wedensday/'
+            },
+
+            {
+                id: 8,
+                image: 'https://films.bz/img-medium/uploads/posts/2023-06/1687074188_evakuaciaa4fa53gf54a3g53agasg.webp',
+                title: 'Extraction 2/evakuacia 2/Էվակուացիա 2' ,
+               watch:'https://api.strvid.ws/embed/movie/64416'
+            },
+            {
+                id: 9,
+                image: 'https://films.bz/img-medium/uploads/posts/2020-12/1609362996_vikinga15fs85hdj1d5h5s0fsf.jpg',
+                title: 'vikings/վիկինգներ/vikingner' ,
+               watch:'https://5808010880810whinehouse.com/serial/vikings/'
+            },
+            {
+                id: 10,
+                image: 'https://films.bz/img-medium/uploads/posts/2020-02/1582461532_06a80g864dfh86ghj86gh86k40h8460j8460df4860dfhnjfh.jpg',
+                title: 'friends/ընկերներ' ,
+               watch:'https://api.tobaco.ws/embed/movie/355'
+            },
+
+            {
+                id: 11,
+                image: 'https://films.bz/img-medium/uploads/posts/2020-01/1579808152_af8046afa6fafa64f0a68f46a40f68af.jpg',
+                title: 'Հադսոն և Ռեքս/hadson and rexs' ,
+               watch:'https://5808010880810whinehouse.com/serial/hudson/'
+            },
+
+            {
+                id: 12,
+                image: 'https://films.bz/img-medium/uploads/posts/2022-02/1646065810_surhobvsg6df65gh26g9njgf5362h258yergtfghjyg.jpg',
+                title: 'Peaky Blinders/Սուր հովարներ' ,
+               watch:'https://api1646039451.delivembd.ws/embed/movie/353'
+            },
+
+            {
+                id: 13,
+                image: 'https://films.bz/img-medium/uploads/posts/2023-07/1688192181_sovorakanjoindfbhdfh6sdd45gs43g.webp',
+                title: 'Սովորական Ջոն/sovorakan john/Average Joe' ,
+               watch:'https://api.strvid.ws/embed/movie/66241'
+            },
+
+            {
+                id: 14,
+                image: 'https://films.bz/img-medium/uploads/posts/2021-09/xaxkaxamarnera20fda210f02af2dad101.jpg',
+                title: 'squid game/Կաղամարների խաղ' ,
+               watch:'https://5808010880810whinehouse.com/serial/sqg/index.php'
+            },
+            {
+                id: 15,
+                image: 'https://films.bz/img-medium/uploads/posts/2021-01/1610057949_cobrakydh15dh15gs1fas3f0vfftd85rfd.jpg',
+                title: 'Կոբրա Կայ/cobra kai' ,
+               watch:'https://api.tobaco.ws/embed/movie/2454'
+            },
+
+            {
+                id: 16,
+                image: 'https://films.bz/img-medium/uploads/posts/2019-08/1566025421_iphone360_178707.jpg',
+                title: 'Supernatural/Գերբնական' ,
+               watch:'https://api.tobaco.ws/embed/movie/380'
+            },
+
+           
+            {
+                id: 18,
+                image: 'https://films.bz/img-medium/uploads/posts/2019-09/tomb-raider-lara-kroft_iphone360_446136.jpg',
+                title: 'Tomb Raider. Լարա Քրոֆթ' ,
+               watch:'https://5808010880810whinehouse.com/films-3/hls/tob-rider/'
+            },
+
+            {
+                id: 19,
+                image: 'https://films.bz/img-medium/uploads/posts/2021-08/1628106763_taqnvira541fg542ag542a4258gs8hg45af.jpg',
+                title: 'taqnvir/Թաքնվիր' ,
+               watch:'https://5808010880810whinehouse.com/films-3/hls/txan-dran-etevu/'
+            },
+
+            {
+                id: 20,
+                image: 'https://films.bz/img-medium/uploads/posts/2020-09/1601029592_xamachd4h15dhds8g8a3sf80j08drtf.jpg',
+                title: 'xamashik/Marionette/Խամաճիկ' ,
+               watch:'https://5808010880810whinehouse.com/films-3/hls/xaachik/'
+            },
+            {
+                id: 21,
+                image: 'https://films.bz/img-medium/uploads/posts/2019-10/1570864105_b1c75b3b42138fy51o44n.jpg',
+                title: 'ancyali labirintosnery/Անցյալի լաբիրինթոսները' ,
+               watch:'https://5808010880810whinehouse.com/films-3/hls/ancyali-labirintos/'
+            },
+
+            {
+                id: 22,
+                image: 'https://films.bz/img-medium/uploads/posts/2019-09/1567288344_iphone360_1041617.jpg',
+                title: 'Աշխարհի բոլոր փողերը/ashxarhi bolor poxery ' ,
+               watch:'https://5808010880810whinehouse.com/films-3/hls/ashxarhi-bolor-oghere/'
+            },
+
+            {
+                id: 23,
+                image: 'https://films.bz/img-medium/uploads/posts/2020-08/1596840980_xorh6fsdh2s1h45dshshds53jfg50kf53j.jpg',
+                title: 'Խորհրդավոր այգին/xorhrdavor aygi ' ,
+               watch:'https://5808010880810whinehouse.com/films-3/hls/xorhrdavor-arteze/'
+            },
+
+            {
+                id: 24,
+                image: 'https://films.bz/img-medium/uploads/posts/2021-01/1610397549_piterpemngsg7fj781g55fggh075sdrd75ft.jpg',
+                title: 'Come Away/Փիթեր Փենը և Ալիսան Հրաշքների աշխարհում ' ,
+               watch:'https://5808010880810whinehouse.com/films-3/hls/iter-en-alisa/'
+            },
+            {
+                id: 25,
+                image: 'https://films.bz/img-medium/uploads/posts/2019-09/tomb-raider-lara-kroft_iphone360_446136.jpg',
+                title: 'Tomb Raider/ Լարա Քրոֆթ ' ,
+               watch:'https://5808010880810whinehouse.com/films-3/hls/tob-rider/'
+            },
+            {
+                id: 26,
+                image: 'https://films.bz/img-medium/uploads/posts/2019-10/realnost-kusaetsja_iphone360_5333.jpg',
+                title: 'Reality Bites/Իրականությունը խայթում է ' ,
+               watch:'https://5808010880810whinehouse.com/films-3/hls/irakanutyune-xaytu-e/'
+            },
+            {
+                id: 27,
+                image: 'https://films.bz/img-medium/uploads/posts/2019-08/1567184365_iphone360_616.jpg',
+                title: ' kokain/Կոկաին' ,
+               watch:'https://5808010880810whinehouse.com/films-3/hls/cocaine/'
+            },
+
+            {
+                id: 28,
+                image: 'https://films.bz/img-medium/uploads/posts/2019-09/1567289142_iphone360_965754.jpg',
+                title: ' Խիզախների գործը/xizaxneri gorcy' ,
+               watch:'https://5808010880810whinehouse.com/films-3/hls/720-xizaxneri-gorce/'
+            },
+
+            {
+                id: 29,
+                image: 'https://films.bz/img-medium/uploads/posts/2020-01/1580130889_sfg86sg486s8064gs8460g4806sg846s86g086sg.jpg',
+                title: ' Հանճարը/hanchary/Genius' ,
+               watch:'https://5808010880810whinehouse.com/films2/hls/hanchare/'
+            },
+
+
+            {
+                id: 30,
+                image: 'https://films.bz/img-medium/uploads/posts/2019-09/vospominanija-o-buduschem_iphone360_682688.jpg',
+                title: 'Testament of Youth/Երիտասարդության պատվիրանը' ,
+               watch:'https://5808010880810whinehouse.com/films-3/hls/eritasardutyan-atviran-1080/'
+            },
+
+            
+            {
+                id: 31,
+                image: 'https://films.bz/img-medium/uploads/posts/2019-09/koroleva-pustyni_iphone360_582257.jpg',
+                title: ' Queen of the Desert/anapati taguhin/Անապատի թագուհին' ,
+               watch:'https://5808010880810whinehouse.com/films-3/hls/anaati-taguhin-720/'
+            },
+
+            {
+                id: 32,
+                image: 'https://films.bz/img-medium/uploads/posts/2019-09/vselennaja-stivena-hokinga_iphone360_770973.jpg',
+                title: ' The Theory of Everything/amen inchi tesutyuny/Ամեն ինչի տեսությունը' ,
+               watch:'https://5808010880810whinehouse.com/films-3/hls/aen-inchi-tesutyune/'
+            },
+
+            {
+                id: 33,
+                image: 'https://films.bz/img-medium/uploads/posts/2020-01/1578315101_it0f684uyd8d8406gd4806gdgg.jpg',
+                title: ' astcu vordin/Son of God/Աստծո Որդին' ,
+               watch:'https://5808010880810whinehouse.com/films-3/hls/80-Astco-vordin/'
+            },
+
+            {
+                id: 34,
+                image: 'https://films.bz/img-medium/uploads/posts/2019-09/lozh-vo-spasenie_iphone360_732797.jpg',
+                title: ' sut hanun prkutyan/The Good Lie/Սուտ հանուն փրկության' ,
+               watch:'https://5808010880810whinehouse.com/films-3/hls/720-sut-hanun-rkutyan/'
+            },
+            {
+                id: 35,
+                image: 'https://films.bz/img-medium/uploads/posts/2021-01/1610272780_prkelparodh56fj5dg1sg5dg05sf56.jpg',
+                title: ' prkel paron benqsin/Saving Mr. Banks/Փրկել պարոն Բենքսին' ,
+               watch:'https://5808010880810whinehouse.com/films-3/hls/rkel-aron-benqsin/'
+            },
+            {
+                id: 36,
+                image: 'https://films.bz/img-medium/uploads/posts/2019-09/ubijstvo-linkolna-tv_iphone360_695761.jpg',
+                title: ' Լինքոլնի սպանությունը/linqolni spanutyunny/Killing Lincoln' ,
+               watch:'https://5808010880810whinehouse.com/films-3/hls/80-linkolni-sanutyune/'
+            },
+            {
+                id: 37,
+                image: 'https://films.bz/img-medium/uploads/posts/2019-09/12-let-rabstva_iphone360_606646.jpg',
+                title: '12 տարվա ստրկություն/12 trava strkutyun/12 Years a Slave ' ,
+               watch:'https://5808010880810whinehouse.com/films-3/hls/720-12-tarva-strkutyun/'
+            },
+
+            {
+                id: 38,
+                image: 'https://films.bz/img-medium/uploads/posts/2020-01/1579436414_8460s840s4806s4806s4806s4806sggg.jpg',
+                title: 'argo/Արգո' ,
+               watch:'https://5808010880810whinehouse.com/films-3/hls/80-argo/'
+            },
+            {
+                id: 39,
+                image: 'https://films.bz/img-medium/uploads/posts/2019-09/korolevskij-roman_iphone360_461124.jpg',
+                title: 'tagavorakan siravep/En kongelig affaere/Թագավորական սիրավեպ' ,
+               watch:'https://5808010880810whinehouse.com/films-3/hls/tagavorakan-sirave/'
+            },
+
+            {
+                id: 40,
+                image: 'https://films.bz/img-medium/uploads/posts/2019-09/moj-put_iphone360_630420.jpg',
+                title: 'Իմ ճանապարհը/im chanaparhy/my way' ,
+               watch:'https://5808010880810whinehouse.com/films-3/hls/720-i-chanaarhe/'
+            },
+
+            {
+                id: 41,
+                image: 'https://films.bz/img-medium/uploads/posts/2019-11/1574173384_koasadoadjiasdjiasdjkasdjkasdjkasdjkasdasd.jpg',
+                title: 'Մարդ, ով փոխեց ամեն ինչ/mard ov amen inch poxec/Moneyball' ,
+               watch:'https://5808010880810whinehouse.com/films-3/hls/80-ard-ov-oxec-aen-inch/'
+            },
+
+            {
+                id: 42,
+                image: 'https://films.bz/img-medium/uploads/posts/2019-08/1565727468_iphone360_535341.jpg',
+                title: '1+1' ,
+               watch:'https://5808010880810whinehouse.com/films-3/hls/720-1+1/'
+            },
+
+            {
+                id: 43,
+                image: 'https://films.bz/img-medium/uploads/posts/2019-09/ledi_iphone360_574315.jpg',
+                title: 'the lady/lady/լեդի' ,
+               watch:'https:///5808010880810whinehouse.com/films-3/hls/720-ledi/'
+            },
+            {
+                id: 44,
+                image: 'https://films.bz/img-medium/uploads/posts/2021-07/1627213149_tagavorieluyta45gas42gv846ag84a8ga.jpg',
+                title: 'Թագավորի ելույթը/tagavori eluyty/ The KingThe Kings Speech' ,
+               watch:'https://5808010880810whinehouse.com/films-3/hls/tagavori_eluyt_720/index.php'
+            },
+
+            {
+                id: 45,
+                image: 'https://films.bz/img-medium/uploads/posts/2019-09/chempion_iphone360_463528.jpg',
+                title: 'chempion/չեմպիոն' ,
+               watch:'https:///5808010880810whinehouse.com/films-3/hls/80-cheion/'
+            },
+            {
+                id: 46,
+                image: 'https://films.bz/img-medium/uploads/posts/2019-09/socialnaja-set_iphone360_427198.jpg',
+                title: 'Սոցիալական ցանց/The Social Network/socialakan canc' ,
+               watch:'https://5808010880810whinehouse.com/films-3/hls/socialakan-canc-720/'
+            },
+
+            {
+                id: 47,
+                image: 'https://films.bz/img-medium/uploads/posts/2022-03/1647794141_spanelirnafsa52sh5dg32e41rftgdrh45848djshdzg.webp',
+                title: 'Սպանել իռլանդացուն/spanel irlandacun/շռեկ' ,
+               watch:'https://5808010880810whinehouse.com/films-3/hls/kill-irishan-1080/'
+            },
+
+            {
+                id: 48,
+                image: 'https://films.bz/img-medium/uploads/posts/2020-01/1578953786_a86fd04a684f086s4g06hjk860yu68k40608yk8460y46ky68k40yk.jpg',
+                title: 'eritasard viktorian/Երիտասարդ Վիկտորյան/The Young Victoria' ,
+               watch:'https://5808010880810whinehouse.com/films-3/hls/eritasard-viktorian/'
+            },
+
+            {
+                id: 49,
+                image: 'https://films.bz/img-medium/uploads/posts/2019-09/ip-man_iphone360_409507.jpg',
+                title: 'im-man/իպ-ման' ,
+               watch:'https://5808010880810whinehouse.com/films-3/hls/i-an-720/'
+            },
+
+            {
+                id: 50,
+                image: 'https://films.bz/img-medium/uploads/posts/2019-09/rozhdestvenskij-kottedzh-video_iphone360_290831.jpg',
+                title: 'Christmas Cottageer/surb cnndyan qotej/Սուրբծննդյան քոթեջ' ,
+               watch:'https://api.tobaco.ws/embed/movie/35771'
+            },
+            {
+                id: 51,
+                image: 'https://films.bz/img-medium/uploads/posts/2020-07/1595767182_gotd62hd5h13d531h53dfsfdaf.jpg',
+                title: 'Game of Thrones/gaheri xaxy/գահերի խաղը',
+                watch:'https://5808010880810whinehouse.com/serial/got/'
+            },
+            {
+                id: 52,
+                image: 'https://films.bz/img-medium/uploads/posts/2021-01/1609779642_harrypilisdsh816186jds18g6as50dhf85srf.jpg',
+                title: 'Harry Potter and the Sorcererՙs Stone/Հարրի Փոթերը և Փիլիսոփայական քարը',
+       watch:'https://5808010880810whinehouse.com/films-2/harryiliso-720/'
+            },
+            {
+                id: 53,
+                image: 'https://films.bz/img-medium/uploads/posts/2020-12/1609362996_vikinga15fs85hdj1d5h5s0fsf.jpg',
+                title: 'vikings/վիկինգներ/vikingner' ,
+               watch:'https://5808010880810whinehouse.com/serial/vikings/'
+            },
+
+            {
+                id: 54,
+                image: 'https://films.bz/img-medium/uploads/posts/2022-02/1646065810_surhobvsg6df65gh26g9njgf5362h258yergtfghjyg.jpg',
+                title: 'Peaky Blinders/Սուր հովարներ' ,
+               watch:'https://api1646039451.delivembd.ws/embed/movie/353'
+            },
+
+            {
+                id: 55,
+                image: 'https://films.bz/img-medium/uploads/posts/2021-09/xaxkaxamarnera20fda210f02af2dad101.jpg',
+                title: 'squid game/Կաղամարների խաղ' ,
+               watch:'https://5808010880810whinehouse.com/serial/sqg/index.php'
+            },
+
+            {
+                id:56,
+                image: 'https://films.bz/img-medium/uploads/posts/2019-08/1566741937_iphone360_104938.jpg',
+                title: 'Երջանկության հետևից/The Pursuit of Happyness' ,
+               watch:'https:///5808010880810whinehouse.com/films-3/hls/720-erjankutyan-hetevic/'
+            },
+
+            {
+                id: 57,
+                image: 'https://films.bz/img-medium/uploads/posts/2022-03/1647774595_hobbarfds245g45f2dghb5gse41867t58fdhrgsfar.webp',
+                title: 'Հոբիթ․ Անսպասելի ճանապարհորդություն/The Hobbit: An Unexpected Journey' ,
+               watch:'https://5808010880810whinehouse.com/films-3/hls/hobbit-1/'
+            },
+
+            {
+                id:58,
+                image: 'https://films.bz/img-medium/uploads/posts/2020-03/1584572121_gsdfktfdfhdgksdfsfafflagsfafa.jpg',
+                title: 'Չեռնոբիլ/chernobil ' ,
+               watch:'https://5808010880810whinehouse.com/serial/chernobyl/'
+            },
+            {
+                id: 59,
+                image: 'https://films.bz/img-medium/uploads/posts/2019-10/1570215812_497011.jpg',
+                title: 'The Commuter/ Ուղևորը' ,
+               watch:'https://5808010880810whinehouse.com/films-3/hls/ughevore/'
+            },
+
+            {
+                id: 60,
+                image: 'https://films.bz/img-medium/uploads/posts/2020-10/1603626952_tagyara156f05aff503af503.jpg',
+                title: 'Թագուհու գամբիտը/The Queens Gambit/taguhu gambity ' ,
+               watch:'https://5808010880810whinehouse.com/serial/queens-gambit/'
+            },
+
+            {
+                id: 61,
+                image: 'https://films.bz/img-medium/uploads/posts/2021-06/1623263482_lokiafd45a4856f584afg85a185f1af185a.jpg',
+                title: ' Լոկի/loki' ,
+               watch:'https://5808010880810whinehouse.com/serial/loki/'
+            },
+            {
+                id: 62,
+                image: 'https://films.bz/img-medium/uploads/posts/2019-08/1565442182_greenbook.jpg',
+                title: 'կանաչ գիրքը/kanach girqy' ,
+               watch:'https://api.tobaco.ws/embed/movie/5053'
+            },
+
+           
+        ];
+
+
+        const categories = [...new Set(product.map((item) => { return item }))]
+
+        document.getElementById('searchBar').addEventListener('keyup', (e) => {
+            const searchData = e.target.value.toLowerCase();
+            const filteredData = categories.filter((item) => {
+                return (
+                    item.title.toLowerCase().includes(searchData)
+                )
+            })
+            displayItem(filteredData)
+        });
+
+        const displayItem = (items) => {
+            document.getElementById('root').innerHTML = items.map((item) => {
+                var { image, title,  watch } = item;
+                return (
+                    `<div class='box'>
+                        <div class='img-box'>
+                            <img class='images' src=${image}></img>
+                        </div> 
+                        <div class='bottom'>
+                      
+                            <p>${title}</p>
+                         
+   <a class="watch" href='${watch}'>Watch now</a>
+                       
+                        </div>
+                    </div>`
+                )
+            }).join('')
+        };
+        displayItem(categories);
+  
+  
+    </script>
+
+<script src="searchengine.js"></script>
+</div>
+  </div>      
+</body>
+</html>
+</body>
+
+</html>
