@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" href="urish.css">
+    <script src="https://kit.fontawesome.com/e8fa2e31b4.js" crossorigin="anonymous"></script>
+    <link class="v78" rel = "icon" href = 
+    "https://kinohayq.github.io/3.png">
+      <title>kinohayq</title>
+</head>
+
+
+ </head>
+<body>   
+<div class="main">
+    <header>
+    
+            <div class="brand-logo">
+               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUfGE_azgXCQcDjW4QwoXztddELqcqcCn7sM4hUY_RFwKjnB9yyTXrZ7ikS7fEFwq3Z1w&usqp=CAU">    
+            </div>
+            <nav class="navbar">
+                <ul class="top-menu">
+                    
+                    
+                        
+                       
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+              
+           
+                          
+                    &nbsp;&nbsp;&nbsp; &nbsp;
+
+    <li class="menu-item">
+                        <a href="hayeren filmer.html" class="menu-link">Հայերեն Թարգմանություն</a>
+                    </li>  
+
+                      
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+
+     <li class="menu-item">
+                        <a href="filmer.html" class="menu-link">ֆիլմեր</a>
+                    </li> 
+
+                      
+                    
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+  
+       <li class="menu-item">
+                        <a href="mult.html" class="menu-link">մուլտֆիլմեր</a>
+                    </li>
+
+                     
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                     
+                         <li class="menu-item">
+                        <a href="ditvum en.html" class="menu-link">Դիտվում են </a>
+                    </li>
+                    
+
+
+        
+                    <div class="searchBar">
+                        <input placeholder="Search..." id="searchBar" name="searchBar" type="text">
+                        <i class="fa-solid fa-magnifying-glass glass" id="btn"></i>
+                    </div>
+                    
+    
+      <script src="script.js"></script> 
+                </ul>
+            </nav>
+            
+        
+        </header>
+  
+<body>
+
+
+    
+  
+            
+
+        </div>
+        
+            
+            <h1  class="vip">  fAVORITE MOVIE</h1>
+       <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="https://films.bz/uploads/posts/2023-06/1687074551_evakuaciamec.webp" style="width:100%;  box-shadow: 2px 2px 13px 0px gray;">
+          <div class="text"></div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="https://films.bz/uploads/posts/2023-06/1687506327_gaxtnimec.webp" style="width:100%;  box-shadow: 2px 2px 13px 0px gray;">
+          <div class="text"></div>
+        </div>
+        
+
+        <div class="mySlides fade">
+          <div class="numbertext"></div>
+          <img src="https://films.bz/uploads/posts/2023-07/1688288552_kaxardmec.webp" style="width:100%;  box-shadow: 2px 2px 13px 0px gray;">
+          <div class="text"></div>
+        </div>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div><br>
+    
+    
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000);
+        }
+        </script>
+        <script>
+            const searchInput = document.getElementById('searchInput');const searchButton = document.getElementById('searchButton');
+const searchResultsContainer = document.getElementById('searchResults');
+searchButton.addEventListener('click', () => {  const query = searchInput.value;
+  fetch(`/search?q=${query}`)    .then(response => response.json())
+    .then(data => {      // Process the search results
+      displaySearchResults(data);    })
+    .catch(error => {      console.error('An error occurred during the search:', error);
+    });});
+function displaySearchResults(results) {
+  // Clear any previous search results  searchResultsContainer.innerHTML = '';
+  // Create HTML elements to display the search results
+  for (const result of results) {    const resultItem = document.createElement('div');
+    resultItem.innerText = result.title;    searchResultsContainer.appendChild(resultItem);
+  }}
+        </script>
+<div class="header">
+                <p>FILM AND CARTOON</p>
+                
+            </div>
+            <div class="body">
+                <div id="root"></div>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+
+    <script>
+        
+        const product = [
+            {
+                id: 0,
+                image:'https://films.bz/img-medium/uploads/posts/2021-01/1609787516_harrymahvan158f41gh58d3gh5s3d0s35h.jpg',
+                title: ' harry potter',
+    
+                watch:'https://api.tobaco.ws/embed/movie/389'
+            },
+            {
+                id: 1,
+                image: 'https://films.bz/img-medium/uploads/posts/2019-12/1577437922_af5af0a68f40a6840jh8k40gk403g8k.jpg',
+                title: 'titanik',
+                watch:'https://api.tobaco.ws/embed/movie/486'
+            },
+            {
+                id: 2,
+                image: 'https://films.bz/img-medium/uploads/posts/2019-12/1576704373_ad98d0a68d40a6d40a68d0ad.jpg',
+                title: 'home alone',
+       watch:'https://5808010880810whinehouse.com/films-1/tanyenak-1-720/'
+            },
+            {
+                id: 3,
+                image: 'https://films.bz/img-medium/uploads/posts/2019-08/1566130701_iphone360_496849.jpg',
+                title: 'malifisenta',
+                watch:'https://api.tobaco.ws/embed/movie/250'
+            },
+            {
+                id: 4,
+                image: 'https://films.bz/img-medium/uploads/posts/2022-02/1645720961_262418167_4535213393265639_8758314333265073163_n.jpg',
+                title: 'spder-man',
+                watch:'https://api.tobaco.ws/embed/movie/51984'
+            },
+            {
+                id: 5,
+                image: 'https://films.bz/img-medium/uploads/posts/2021-05/1622178436_casummar41sazg4512sa1g1254asg5142a.jpg',
+                title: 'ցասում մարդկային / casum mardkayin' ,
+               watch:'https://api.tobaco.ws/embed/movie/45349'
+            },
+
+            {
+                id: 6,
+                image: 'https://films.bz/img-medium/uploads/posts/2023-03/1680264449_creed3.webp',
+                title: 'krid 3' ,
+               watch:'https://api.strvid.ws/embed/movie/60676'
+            },
+
+            {
+                id: 7,
+                image: 'https://films.bz/img-medium/uploads/posts/2023-04/1681661432_mafiayivosorsgs541asg586asg365swdhg.webp',
+                title: 'mafiyai vorsordy' ,
+               watch:'https://api.strvid.ws/embed/movie/8037'
+            },
+
+            {
+                id: 8,
+                image: 'https://films.bz/img-medium/uploads/posts/2023-04/1681113947_lavmayrasag7fa7g7sa4g4a.webp',
+                title: 'lav mayrery/լավ մայրերը' ,
+               watch:'https://api.strvid.ws/embed/movie/64445'
+            },
+            {
+                id: 9,
+                image: 'https://films.bz/img-medium/uploads/posts/2023-04/1681563964_verjinbanyvornaassgdf7hd4f583ds463hshg.webp',
+                title: 'verjon bany vor na asac indz/վերջին բանը որ նա ինձ ասաց' ,
+               watch:'https://api.strvid.ws/embed/movie/63912'
+            },
+            {
+                id: 10,
+                image: 'https://films.bz/img-medium/uploads/posts/2023-04/1681590085_verjintagavsagf452dgs4fv53aszfg351asff.webp',
+                title: 'verjin tagavorutyuny' ,
+               watch:'https://api.strvid.ws/embed/movie/63910'
+            },
+
+            {
+                id: 11,
+                image: 'https://films.bz/img-medium/uploads/posts/2019-09/geroj_iphone360_889.jpg',
+                title: 'heros/հերոս' ,
+               watch:'https://api.tobaco.ws/embed/movie/8056'
+            },
+
+            {
+                id: 12,
+                image: 'https://films.bz/img-medium/uploads/posts/2022-05/1653218573_u478d4f8e7a71ub76r61a.webp',
+                title: 'trchox dashuynneri tuny/թռչող դաշույների տունը' ,
+               watch:'https://api.tobaco.ws/embed/movie/8149'
+            },
+
+            {
+                id: 13,
+                image: 'https://films.bz/img-medium/uploads/posts/2020-07/1595153306_6hj2kgfjh5fd1hgdfs53g53sdg153s153g.jpg',
+                title: 'հավասարակշռություն/havasarakshrutyun' ,
+               watch:'https://api.tobaco.ws/embed/movie/3028'
+            },
+
+            {
+                id: 14,
+                image: 'https://films.bz/img-medium/uploads/posts/2020-01/1577981401_h7dr065gh0sd68ff4068sf068sf.jpg',
+                title: 'iqs mardik/իքս մարդիկ' ,
+               watch:'https://5808010880810whinehouse.com/films-3/hls/iks-ardik-1/'
+            },
+            {
+                id: 15,
+                image: 'https://films.bz/img-medium/uploads/posts/2022-10/1667199886_arevmtyanchaksg4ds7gh41sdg15sd15gwsa58gs.webp',
+                title: 'arevmtyan chakatum aranc popoxutyunneri' ,
+               watch:'https://api.loadbox.ws/embed/movie/59584'
+            },
+
+            {
+                id: 16,
+                image: 'https://films.bz/img-medium/uploads/posts/2022-08/1659959187_13kyanqers5gh1sd3dfh0g.webp',
+                title: '13 kyanqer' ,
+               watch:'https://api.tobaco.ws/embed/movie/58735'
+            },
+
+            {
+                id: 17,
+                image: 'https://films.bz/img-medium/uploads/posts/2021-05/1622439576_187631674_2118658101610017_5867488653962200196_n.png',
+                title: 'qruela/քրուելա' ,
+               watch:'https://api.tobaco.ws/embed/movie/44471'
+            },
+
+
+            {
+                id: 18,
+                image: 'https://films.bz/img-medium/uploads/posts/2019-08/1567200919_iphone360_6877.jpg',
+                title: 'terminal/տերմինալ' ,
+               watch:'https://api.tobaco.ws/embed/movie/756'
+            },
+
+            {
+                id: 19,
+                image: 'https://films.bz/img-medium/uploads/posts/2021-04/1618756460_lrtesnerixad51af51ag158sjh3s531g513ag.jpg',
+                title: 'lrtesneri xaxer/լրտեսների խաղեր' ,
+               watch:'https://5808010880810whinehouse.com/films-3/hls/lrtesakan-xaxer/'
+            },
+
+            {
+                id: 20,
+                image: 'https://films.bz/img-medium/uploads/posts/2022-01/1641044023_34xss3gwkdwvtomcdkec2lw4pvb.jpg',
+                title: 'հարրի փոթթեր 20 տաի անց/harry potter 20 years later' ,
+               watch:'https://api.tobaco.ws/embed/movie/53299'
+            },
+            {
+                id: 21,
+                image: 'https://films.bz/img-medium/uploads/posts/2023-03/1679218278_koractarfsgh53sdg15sd15g5s1a.webp',
+                title: 'korac tagavory/կորած թագավորը' ,
+               watch:'https://api.strvid.ws/embed/movie/60943'
+            },
+
+            {
+                id: 22,
+                image: 'https://films.bz/img-medium/uploads/posts/2020-12/1608884343_evsmerkdhg1dj85sdh5s1gsag2sg0sdg.jpg',
+                title: 'evs mek raund/ևս մեկ ռաունդ ' ,
+               watch:'https://api.tobaco.ws/embed/movie/36021'
+            },
+
+            {
+                id: 23,
+                image: 'https://films.bz/img-medium/uploads/posts/2022-11/1669279036_surtsnaf62s5hg95sa945sd94njh49gs.webp',
+                title: 'սուրբ ծննունդը քեզ հետ/surb cnnundy qez het ' ,
+               watch:'https://api.loadbox.ws/embed/movie/61147'
+            },
+
+            {
+                id: 24,
+                image: 'https://films.bz/img-medium/uploads/posts/2023-03/1677656268_193f4e75993e06d36f6ea48797a0dfc3.webp',
+                title: 'otto anunov mardy/օտտօ անունով մարդը ' ,
+               watch:'https://api.strvid.ws/embed/movie/62014'
+            },
+            {
+                id: 25,
+                image: 'https://films.bz/img-medium/uploads/posts/2019-09/1569691388_888304.jpg',
+                title: 'նվեր/nver ' ,
+               watch:'https://api.tobaco.ws/embed/movie/7971'
+            },
+            {
+                id: 26,
+                image: 'https://films.bz/img-medium/uploads/posts/2019-10/legendy-oseni_iphone360_8827.jpg',
+                title: 'ashnan legendner/աշնան լեգենդներ ' ,
+               watch:'https://5808010880810whinehouse.com/films-3/hls/720-ashnan-legendner/'
+            },
+            {
+                id: 27,
+                image: 'https://films.bz/img-medium/uploads/posts/2020-02/1582118351_w68t0w684t680dujglkgol4680h4680gk468fg.jpg',
+                title: ' jumanji/ջումանջի' ,
+               watch:'https://api.tobaco.ws/embed/movie/9867'
+            },
+
+            {
+                id: 28,
+                image: 'https://films.bz/img-medium/uploads/posts/2023-01/1674814510_cheburportarm.webp',
+                title: ' չեբուրաշկա/cheburashka' ,
+               watch:'https://api.getcodes.ws/embed/movie/57434'
+            },
+
+            {
+                id: 29,
+                image: 'https://films.bz/img-medium/uploads/posts/2019-09/1569183325_588672.jpg',
+                title: ' datavory/դատավորը' ,
+               watch:'https://5808010880810whinehouse.com/films-3/hls/720-datavor/'
+            },
+
+
+            {
+                id: 30,
+                image: 'https://films.bz/img-medium/uploads/posts/2023-02/1675325835_mardukjardujg0as8406df8046hsd840gsa84fsa.webp',
+                title: ' marduk-jardukn u fleytan' ,
+               watch:'https://api.getcodes.ws/embed/movie/60856'
+            },
+
+            
+            {
+                id: 31,
+                image: 'https://films.bz/img-medium/uploads/posts/2021-03/1615104095_rayanevver5sgd513h513dj513g513k513rf513h5d3sg.jpg',
+                title: ' rayan ev verji vishapt/Ռայան և վերջին վիշապը' ,
+               watch:'https://api.tobaco.ws/embed/movie/43891'
+            },
+
+            {
+                id: 32,
+                image: 'https://films.bz/img-medium/uploads/posts/2023-01/1673422847_pussportarm.webp',
+                title: ' կոշկավոր կատուն/koshkavor katun' ,
+               watch:'https://api.loadbox.ws/embed/movie/57437'
+            },
+
+            {
+                id: 33,
+                image: 'https://films.bz/img-medium/uploads/posts/2021-07/lukaa5af4521ag4512a5fa51af.jpg',
+                title: ' luka/լուկա' ,
+               watch:'https://api.tobaco.ws/embed/movie/44692'
+            },
+
+            {
+                id: 34,
+                image: 'https://films.bz/img-medium/uploads/posts/2021-09/1630832435_dagiaroreana21fsa41g2f452a1245sdg215f1a5s.jpg',
+                title: ' dagii aroryan/դագիի առօրյան' ,
+               watch:'https://api.tobaco.ws/embed/movie/50245'
+            },
+            {
+                id: 35,
+                image: 'https://films.bz/img-medium/uploads/posts/2022-03/1647862163_eskarmrumemsg513sgh54s1g5fas8f8af84asf.webp',
+                title: ' es karmrum em/ես կարմրում եմ' ,
+               watch:'https://api.tobaco.ws/embed/movie/54748'
+            },
+            {
+                id: 36,
+                image: 'https://films.bz/img-medium/uploads/posts/2022-05/1651675020_vattxerqewqtrdg52dsf453dshgsd.webp',
+                title: ' bad guys' ,
+               watch:'https://api.tobaco.ws/embed/movie/53597'
+            },
+            {
+                id: 37,
+                image: 'https://films.bz/img-medium/uploads/posts/2019-08/1566921582_z_0.jpg',
+                title: 'zverapolis/զվեռապոլիս ' ,
+               watch:'https://api.tobaco.ws/embed/movie/126'
+            },
+
+            {
+                id: 38,
+                image: 'https://films.bz/img-medium/uploads/posts/2022-08/1659449895_minionsport.webp',
+                title: 'minionner gruvitacia/մինիոններ գրուվիտացիա ' ,
+               watch:'https://api.tobaco.ws/embed/movie/15161'
+            },
+            {
+                id: 39,
+                image: 'https://films.bz/img-medium/uploads/posts/2021-07/1625817549_poqrikbossya01ag2102a0g20a1g2a2g1021ag.jpg',
+                title: 'փոկրիկ բոսը 2/pokrik bossy 2' ,
+               watch:'https://api.tobaco.ws/embed/movie/48429'
+            },
+
+            {
+                id: 40,
+                image: 'https://films.bz/img-medium/uploads/posts/2019-09/bjetmen-protiv-cherepashek-nindzja_iphone360_1236282.jpg',
+                title: 'chiri pashki ninja' ,
+               watch:'https://api.tobaco.ws/embed/movie/8722'
+            },
+
+            {
+                id: 41,
+                image: 'https://films.bz/img-medium/uploads/posts/2019-09/kung-fu-panda-lapki-sudby_iphone360_1161084.jpg',
+                title: 'kung-fu panda/կունգֆու պանդա' ,
+               watch:'https://api.tobaco.ws/embed/movie/4050'
+            },
+
+            {
+                id: 42,
+                image: 'https://films.bz/img-medium/uploads/posts/2019-09/supersemejka-2_iphone360_839650.jpg',
+                title: 'anhavanakanner 2/անհավանականներ 2' ,
+               watch:'https://api.tobaco.ws/embed/movie/1998'
+            },
+
+            {
+                id: 43,
+                image: 'https://films.bz/img-medium/uploads/posts/2020-12/1609008796_hogisg2a69gf2af6dh0g06a5g0a0ghs.jpg',
+                title: 'hogi/հոգի' ,
+               watch:'https://api.tobaco.ws/embed/movie/15941'
+            },
+            {
+                id: 44,
+                image: 'https://films.bz/img-medium/uploads/posts/2019-09/samozvanec_iphone360_612481.jpg',
+                title: 'самозванец' ,
+               watch:'https://api.tobaco.ws/embed/movie/3927'
+            },
+
+            {
+                id: 45,
+                image: 'https://films.bz/img-medium/uploads/posts/2019-09/tachki_iphone360_61249.jpg',
+                title: 'tashki/տաշկի' ,
+               watch:'https://api.tobaco.ws/embed/movie/2043'
+            },
+            {
+                id: 46,
+                image: 'https://films.bz/img-medium/uploads/posts/2019-10/igra-dzheri_iphone360_78163.jpg',
+                title: 'ջերի խաղ/jerry xax' ,
+               watch:'https://api.tobaco.ws/embed/movie/11823'
+            },
+
+            {
+                id: 47,
+                image: 'https://films.bz/img-medium/uploads/posts/2022-03/1647425096_wb53f4a682e7fof73k34m.webp',
+                title: 'shrek/շռեկ' ,
+               watch:'https://5808010880810whinehouse.com/cartoons/hls/shrek-1/'
+            },
+
+            {
+                id: 48,
+                image: 'https://films.bz/img-medium/uploads/posts/2022-03/1647422721_f8b31b6fd2409sk79q16y.webp',
+                title: 'մադագասկար/madagaskar' ,
+               watch:'https://5808010880810whinehouse.com/cartoons/hls/adagaskar-1/'
+            },
+
+            {
+                id: 49,
+                image: 'https://films.bz/img-medium/uploads/posts/2019-09/hrabraja-serdcem_iphone360_409118.jpg',
+                title: 'xizax arqayadustry/խիզախ արքայադուստրը' ,
+               watch:'https://5808010880810whinehouse.com/films-3/hls/720-xizax-arqayadustre/'
+            },
+
+            {
+                id: 50,
+                image: 'https://films.bz/img-medium/uploads/posts/2019-09/gadkij-ja-mini-filmy-minony_iphone360_653704.jpg',
+                title: 'minionner/մինիոններ' ,
+               watch:'https://api.tobaco.ws/embed/movie/35771'
+            },
+
+            {
+                id: 51,
+                image: 'https://films.bz/img-medium/uploads/posts/2019-09/gorod-geroev_iphone360_693126.jpg',
+                title: 'herosneri qaxaq/հերոսների քաղաք' ,
+               watch:'https://api.tobaco.ws/embed/movie/233'
+            },
+
+            {
+                id: 52,
+                image: 'https://films.bz/img-medium/uploads/posts/2019-09/istorija-igrushek-bolshoj-pobeg_iphone360_258328.jpg',
+                title: 'խաղալիքների պատմություն.մեծ փախուստ/xaxaliqneri patmtyun mec paxust' ,
+               watch:'https://api.tobaco.ws/embed/movie/504'
+            },
+            
+            {
+                id: 53,
+                image: 'https://films.bz/img-medium/uploads/posts/2019-09/lednikovyj-period_iphone360_707.jpg',
+                title: 'sarcadashtayin shrjan/սառցադաշտային շրջան' ,
+               watch:'https://api.tobaco.ws/embed/movie/417'
+            },
+
+            {
+                id: 54,
+                image: 'https://films.bz/img-medium/uploads/posts/2022-03/1647696779_gexeckuafsag245sdg45f4586hb4586ds58fsaf.webp',
+                title: 'գեղեցկուհին և հրեշը/gexeckuhin ev hreshy' ,
+               watch:'https://5808010880810whinehouse.com/cartoons/hls/gexecukin-ev-hreshe/'
+            },
+
+            {
+                id: 55,
+                image: 'https://films.bz/img-medium/uploads/posts/2020-12/1609424518_moanasg54d51h15fj15d15h5asf51ag51af.jpg',
+                title: 'moana/մոաննա' ,
+               watch:'https://api.tobaco.ws/embed/movie/128'
+            },
+
+            {
+                id: 56,
+                image: 'https://films.bz/img-medium/uploads/posts/2022-03/1647362193_ratatuysg1d452fh57dfs145s1gfsdd.jpg',
+                title: 'ratatuy/ռատատույ' ,
+               watch:'https://api.tobaco.ws/embed/movie/493'
+            },
+
+            {
+                id: 57,
+                image: 'https://films.bz/img-medium/uploads/posts/2019-10/1570798784_t801ef3378507ja64q75o.jpg',
+                title: 'aryuc arqa/առյուծ արքա' ,
+               watch:'https://api.tobaco.ws/embed/movie/5785'
+            },
+            {
+                id: 58,
+                image: 'https://films.bz/img-medium/uploads/posts/2019-08/1565442182_greenbook.jpg',
+                title: 'կանաչ գիրքը/kanach girqy' ,
+               watch:'https://api.tobaco.ws/embed/movie/5053'
+            },
+
+        ];
+
+
+        const categories = [...new Set(product.map((item) => { return item }))]
+
+        document.getElementById('searchBar').addEventListener('keyup', (e) => {
+            const searchData = e.target.value.toLowerCase();
+            const filteredData = categories.filter((item) => {
+                return (
+                    item.title.toLowerCase().includes(searchData)
+                )
+            })
+            displayItem(filteredData)
+        });
+
+        const displayItem = (items) => {
+            document.getElementById('root').innerHTML = items.map((item) => {
+                var { image, title,  watch } = item;
+                return (
+                    `<div class='box'>
+                        <div class='img-box'>
+                            <img class='images' src=${image}></img>
+                        </div> 
+                        <div class='bottom'>
+                      
+                            <p>${title}</p>
+                         
+   <a class="watch" href='${watch}'>Watch now</a>
+                       
+                        </div>
+                    </div>`
+                )
+            }).join('')
+        };
+        displayItem(categories);
+  
+  
+    </script>
+
+<script src="searchengine.js"></script>
+<footer>
+    <div class="footer-row">
+        <div class="footer-col">
+            <p class="v5" >© Created By Vahan Hovhannisyan. 2023</p>
+          
+        </div>
+        </div>
+        <div class="footer-col">
+            <p>
+                Դիտի՛ր բարձր որակով
+Ինչո՞վ զբաղվել ծանր աշխատանքային օրերից հետո։ Մերօրյա կյանքը շատ տարբերակներ է առաջարկում, բայց մեր մոլորակի համարյա ցանկացած բնակիչ սիրում է դիտել իր սիրելի կինոնկարները։ Մենք ստեղծել ենք յուրահատուկ և իր տեսակի մեջ եզակի կինոթատրոն՝ հարմար պայմաններում տեսանյութերի դիտման համար։ Դու մեր կայքում կգտնես կինոարտադրության ամենահայտնի նմուշները, որոնք կարող ես դիտել անվճար։ Առաջարկում ենք հենց հիմա խորասուզվել ֆիլմերի զարմանալի աշխարհ։ Ֆիլմերը հասանելի են կայքում շուրջօրյա։
+            </p>
+          
+        </div>
+        <div class="footer-col">
+            <p>
+                Ձեր սիրելի սերիալները
+                Ինչ վերաբերվում է սերիալների առաջարկվող ցանկին, որը դու այստեղ կարող ես դիտել HD որակով, ապա այն մշտապես լայնացվում է և ավելացվում է կինոաշխարհի ամենահայտնի նմուշներով։ Մեկ խոսքով՝ որակյալ կինոաշխարհի ցանկացած երկրպագու մեր կայքում պարտադիր կգտնի այն, ինչն իրեն հաճույք է պատճառում և կարող է անվճար դիտել առցանց՝ տնային պայմաններում։ Կանչի՛ր ընկերներիդ և հաճելի ժամանակ անցկացրեք միասին, իսկ մեր կայքը կդառնա քո հանգստի հրաշալի լրացումը։
+            </p>
+          
+        </div>
+        <div class="footer-col">
+            <p>
+                Կինոաշխարհի նորույթները, որոնք կարող ես դիտել iOS-ով և Android-ով
+Ի ուրախություն մեր այցելուների, մեր կինոթատրոնը առաջարկում է դիտել սիրելի ֆիլմերը և սերիալները բջջային հեռախոսով, գտնվելով աշխարհի ցանկացած ծայրում։ Հենց հիմա մենք պատրաստ ենք առաջարկել կայքի լայն հնարավորությունները։ Դու կարող ես դիտել քո սիրած ֆիլմերն ու սերիալներն առցանց՝ HD որակով։ Մաղթում ենք քեզ հաճելի դիտում։
+            </p>
+
+
+
+        <div class="footer-col">
+            <ul class="social-icon-menu">
+                <li class="social-menu-item">
+                    <a href="https://www.facebook.com/&quot;" class="menu-link">
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li class="social-menu-item">
+                    <a href="https://www.instagram.com/&quot;" class="menu-link">
+                        <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</footer>
+  </div>      
+</body>
+</html
